@@ -61,7 +61,6 @@ int main() {
     pid_t pid;
 	
 	pid = fork();
-    if (pid < 0) { perror("fork produttore"); exit(1); }
     if (pid == 0) {
         printf("[PROCESSO PRODUTTORE] Avviato (PID: %d)\n", getpid());
         Produttore(p, b);
