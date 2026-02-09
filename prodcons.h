@@ -2,10 +2,14 @@
 #define _PRODCONS_
 
 #include "monitor_hoare.h"
+// Monitor Vettore Circolare (ha 2 variabili: 0 e 1)
 #define VARCOND_PROD_CIRCOLARE 0
 #define VARCOND_CONS_CIRCOLARE 1
-#define VARCOND_PROD_SINGOLO 2
-#define VARCOND_CONS_SINGOLO 3 
+
+// Monitor Buffer Singolo (ha ANCHE LUI 2 variabili: 0 e 1)
+// NON usare 2 e 3, perché è una struttura separata!
+#define VARCOND_PROD_SINGOLO 0  // <--- CORRETTO
+#define VARCOND_CONS_SINGOLO 1  // <--- CORRETTO
 
 
 #define DIM 5
