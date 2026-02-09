@@ -12,7 +12,6 @@ void Consumatore(MonitorVettoreCircolare *p, MonitorBufferSingolo *b);
 
 int main() {
 
-	int status;
 
 	key_t id_circolare = shmget(IPC_PRIVATE, sizeof(MonitorVettoreCircolare), IPC_CREAT | 0664);
 
