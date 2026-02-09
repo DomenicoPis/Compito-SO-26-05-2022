@@ -26,7 +26,7 @@ int main() {
     if(p == (void*)-1){
 
         perror("errore shmat monitor coda circolare");
-        exit(1)
+        exit(1);
     }
 
 	/* TBD: Allocare l'oggetto MonitorVettoreCircolare in memoria condivisa */
